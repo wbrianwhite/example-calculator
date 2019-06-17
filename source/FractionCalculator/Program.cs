@@ -28,7 +28,7 @@ namespace FractionCaclulator
 		{
 			MathNode[] nodes = Parser.Parse(args);
 			Fraction result = MathRunner.Calculate(nodes);
-			Console.WriteLine($"Result {result}");
+			Console.WriteLine("= " + result.ToConsoleOutput());
 		}
 	}
 }
