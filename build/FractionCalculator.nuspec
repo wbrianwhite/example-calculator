@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>FractionCalculator</id>
+    <version>1.0.0</version>
+    <authors>Brian White</authors>
+    <owners>Brian White</owners>
+    <licenseUrl>https://github.com/wbrianwhite/example-calculator/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/wbrianwhite/example-calculator/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Example netstandard app using fractional calculcations on command line args</description>
+    <releaseNotes>Just an example</releaseNotes>
+  	<copyright>Copyright © 2019 Brian White</copyright>
+    <tags>Interview Example</tags>
+	<dependencies>
+		<dependency id="chocolatey" version="0.10.4" />      
+	</dependencies>
+  </metadata>
+	<files>
+		<!-- this section controls what actually gets packaged into the Chocolatey package, tools is the choco installer and bin is the app -->
+		<file src="tools\**" target="tools" />
+        <file src="..\Source\FractionCalculator\bin\release\**" target="tools\bin" />        
+	</files>
+</package>
